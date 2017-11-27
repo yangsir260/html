@@ -1,0 +1,217 @@
+.w640 {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #fdebd1;
+  position: relative; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  overflow: hidden; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.page_index {
+  background-color: #ddd;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.none {
+  display: none; }
+
+.video_bg, .video_detail {
+  width: 100%;
+  height: 100%; }
+
+.video_bg img {
+  width: 100%; }
+
+.video_btn li a {
+  width: 0.98438rem;
+  height: 0.98438rem;
+  background: url(../images/audio.png) no-repeat scroll 0 0/contain;
+  display: block;
+  position: absolute;
+  font-size: 0; }
+
+.video_btn.h108 li:nth-child(1) a {
+  top: 5.71875rem;
+  left: 2.29688rem; }
+
+.video_btn.h108 li:nth-child(2) a {
+  top: 6.5625rem;
+  left: 4.3125rem; }
+
+.video_btn.h108 li:nth-child(3) a {
+  top: 8.46875rem;
+  left: 4.3125rem; }
+
+.video_btn.h108 li:nth-child(4) a {
+  top: 10.59375rem;
+  left: 1.60938rem; }
+
+.video_btn.h108 li:nth-child(5) a {
+  top: 10.59375rem;
+  left: 4.3125rem; }
+
+.video_btn.h134 li:nth-child(1) a {
+  top: 6.625rem;
+  left: 4.96875rem; }
+
+.video_btn.h134 li:nth-child(2) a {
+  top: 9.9375rem;
+  left: 1.65625rem; }
+
+.video_btn.h134 li:nth-child(3) a {
+  top: 9.9375rem;
+  left: 4.53125rem; }
+
+.video_btn.h134 li:nth-child(4) a {
+  top: 11.40625rem;
+  left: 4.53125rem; }
+
+.video_btn.h155 li:nth-child(1) a {
+  top: 7.23438rem;
+  left: 5.79688rem; }
+
+.video_btn.h155 li:nth-child(2) a {
+  top: 8.54688rem;
+  left: 3.42188rem; }
+
+.video_btn.h155 li:nth-child(3) a {
+  top: 9.875rem;
+  left: 1.29688rem; }
+
+.video_btn.h155 li:nth-child(4) a {
+  top: 9.875rem;
+  left: 5.20313rem; }
+
+.video_btn.h155 li:nth-child(5) a {
+  top: 11.3125rem;
+  left: 6.04688rem; }
+
+.video_btn.y128 li:nth-child(1) a {
+  top: 7.4375rem;
+  left: 2rem; }
+
+.video_btn.y128 li:nth-child(2) a {
+  top: 7.4375rem;
+  left: 4.53125rem; }
+
+.video_btn.y128 li:nth-child(3) a {
+  top: 9.96875rem;
+  left: 1.35938rem; }
+
+.video_btn.y128 li:nth-child(4) a {
+  top: 9.96875rem;
+  left: 3.10938rem; }
+
+.video_btn.y128 li:nth-child(5) a {
+  top: 9.96875rem;
+  left: 5.09375rem; }
+
+.video_btn.y165 li:nth-child(1) a {
+  top: 6.75rem;
+  left: 4.53125rem; }
+
+.video_btn.y165 li:nth-child(2) a {
+  top: 9.4375rem;
+  left: 1.29688rem; }
+
+.video_btn.y165 li:nth-child(3) a {
+  top: 9.76563rem;
+  left: 5.125rem; }
+
+.video_btn.y165 li:nth-child(4) a {
+  top: 11.28125rem;
+  left: 4.89063rem; }
+
+.video_detail_txt {
+  position: absolute;
+  width: 5.23438rem;
+  height: 2.8125rem;
+  left: 3.25rem;
+  top: 11.3125rem; }
+
+.video_detail_txt .text {
+  width: 100%;
+  height: 100%;
+  fotn-size: 0.28125rem;
+  color: #6a3906;
+  overflow: hidden; }
+
+.return {
+  width: 2.03125rem;
+  height: 0.625rem;
+  display: inline-block;
+  background: url(../images/back.png) no-repeat scroll 0 0/contain;
+  font-size: 0;
+  position: absolute;
+  right: 0;
+  bottom: -px2em(40); }
+
+#loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ddd;
+  z-index: 999;
+  color: #fff; }
+
+.slideShine {
+  width: 1000px;
+  font-family: "Microsoft YaHei";
+  font-size: 30px;
+  text-align: center;
+  background: #999 -webkit-linear-gradient(left, #999, #000) 0 0 no-repeat;
+  -webkit-background-size: 80px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
+  -webkit-animation: slideShine 3s infinite; }
+
+@-webkit-keyframes slideShine {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 100% 100%; } }
+#btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  background: url(../images/icon_play.png) no-repeat scroll 0 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  background-size: contain;
+  -webkit-tap-highlight-color: transparent;
+  display: block; }
+
+.play {
+  -webkit-animation: mplay 2.3s linear infinite; }
+
+.pause {
+  -webkit-animation: mpause 2.3s linear infinite; }
+
+@-webkit-keyframes mplay {
+  0% {
+    -webkit-transform: rotateZ(0); }
+  100% {
+    -webkit-transform: rotateZ(360deg); } }
+@-webkit-keyframes mpause {
+  0% {
+    -webkit-transform: rotateZ(0); }
+  100% {
+    -webkit-transform: rotateZ(0); } }
+
+/*# sourceMappingURL=yihaoyuan1125.css.map */
