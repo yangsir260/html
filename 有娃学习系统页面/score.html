@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>有娃首页</title>
+<link rel="stylesheet" href="http://res.layui.com/layui/dist/css/layui.css?t=1512984638033"  media="all">
+<link rel="stylesheet" href="css/base.css"  media="all">
+<link rel="stylesheet" href="css/style.css"  media="all">
+<script type="text/javascript" src="http://js.tlt.cn/global/jquery/1.8/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.raty.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+  <div class="leftbar">
+      <div class="scroll">
+          <div class="leftbar_tit" style="background-color:#292941;"><h2 style="font-size:18px;">课程：拖拉磨蹭</h2></div>
+          <ul class="leftbar_nav">
+            <li><a href="">拖拉磨蹭的含义<span class="icon icon-yes"></span></a></li>
+            <li><a href="">课后习题<span class="icon icon-yes"></span></a></li>
+            <li><a href="" class="hover">课程评分<span class="icon">40%</span></a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="content">
+    <div class="main">
+      <div class="detail_tp">
+          <h2><i class="icon_full" onclick="fullscreen()"></i>课后习题</h2>
+      </div>
+      <div class="detail_padd">
+          <div class="score_con">
+             <div class="clearf score_click">
+               <div class="fl">点击星星评分</div>
+               <div id="star" class="fl" data-score="5"></div>
+               <div class="fl"><em id="hint"></em>分</div>
+             </div>
+             <div class="textarea_box" contenteditable="true" placeholder="我还有疑问"><br /></div>
+             <button class="btn_sub btn-normal">发表疑问</button>
+        </div>
+      </div>
+      <div class="nextclass">
+        <h2><a href="#" class="link tc">本课程已学完^_^ 开始第二节课学习！</a></h2>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript">
+      $(function() {
+        $.fn.raty.defaults.path = 'images';
+        $('#star').raty({
+           score: function() {
+
+              return $(this).attr('data-score');
+
+            },
+            size : 46,
+            target: '#hint',
+            targetKeep: true,
+             precision: true
+        });
+      })
+    function fullscreen(){
+        var leftbar=$('.leftbar');
+        var content=$('.content');
+        if(leftbar.is(":hidden")){
+           leftbar.show();
+           content.css({'left':'240px'});
+        }
+        else{
+          leftbar.fadeOut();
+           content.css({'left':'0'});
+        }
+    }
+    $('.checkbox').change(function(){
+      if($(this).is(':checked')){
+        $(this).parents('label').addClass('hover'); 
+      } 
+      else{
+        $(this).parents('label').removeClass('hover');
+      }
+    })
+    $('.radio').click(function(){
+      $(this).parent().addClass('hover').siblings().removeClass('hover');
+    })
+
+  </script>
+</body>
+</html>

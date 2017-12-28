@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* base css */
+body,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,div,form,fieldset,input,textarea,th,td{margin:0;padding:0;}
+body{color:#000;font:14px/1.5 "Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti,san-serif;}
+h1,h2,h3,h4,h5,h6{font-size:14px;font-weight:normal;}
+em,small,b,i,strong{font-weight:normal; font-style:normal; font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+input,button,select,textarea{outline:none;font-size:100%;}
+fieldset,img,input{border:0;}
+img{vertical-align:top;}
+ul,ol,dl{list-style:none;}
+/*宽度边距*/
+.mt10{margin-top:10px;}
+.mb10{margin-bottom:10px;}
+.ml10{margin-left:10px;}
+.mr10{margin-right:10px;}
+/*定位对齐*/
+.pr{position:relative;}
+.pa{position:absolute;}
+.pf{position:fixed;}
+.mc{margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center}
+.clearf{*zoom:1;}
+.clearf:after{clear:both;content:"";display:table;}
+/*文字*/
+.fB{font-weight:bold;}
+.fC{font-style:italic;}
+.f10{font-size:10px;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+a{color:#000;text-decoration:none;outline: none;}
+.unl:hover,.unl a:hover{text-decoration:underline;}
+.cRed,.cRed a,.cRed a:visited{color:#ec1a5b;}
+.cRed a:hover{color:#ec1a5b;}
+.cWhite,.cWhite a,.cWhite a:visited{color:#fff;}
+.cWhite a:hover{color:#fff;}
+.c000,.c000 a,.c000 a:visited{color:#000;}
+.c000 a:hover{color:#000;}
+.c333,.c333 a,.c333 a:visited{color:#333;}
+.c333 a:hover{color:#333;}
+.c-sub,.c-sub a,.c-sub a:visited{color:#6d7e85;}
+.c-h2,.c-h2 a,.c-h2 a:visited{color:#2e3942;}
